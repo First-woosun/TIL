@@ -105,3 +105,61 @@
         - SpringBoot란?
             - Spring을 사용하기 위해선 먼저 여러가지 사항들을 설정해줘야 함 -> 이 과정이 복잡함.
             - 이 설정을 간편하게 할 수 있도록 해주는 별도의 프레임워크가 SpringBoot임
+
+## 2024-07-24 
+- 인프런 Git강의
+    - git이란?
+        - 코드 변경점을 기록하는 장치
+    - github란?
+        - 프로그램을 온라인에 코드를 백업하고 공유하는 온라인 백업 저장소
+    - 필수 linux 명령어
+        - linux 명령어를 사용하기 위해 git bash로 진행
+        - pwd -> 현재 디렉토리 출력
+        - ls -> 현재 디렉토리에 있는 것들 목록 출력
+        - ls -a -> 숨김 팡리도 모두 출력
+        - cd -> 현재 디렉토리 이동
+    - git 필수 명령어
+        - git init -> git을 본격적으로 시작하기 위해 초기 세팅, 프로젝트 시작 딱 한번만 입력하면 됨, .git 파일 생성, 정확한 디렉토리에서 진행
+        - git add -> "git add 파일명"으로 사용, 저장 할 파일 지정
+        - git commit -> "git commit -m 메세지 작성"으로 사용, 지정된 파일을 저장
+        - git status
+        - git log -> commit 내역 확인
+        - git push
+        - git clone
+        - git pull
+        - git branch
+        - git checkout
+        - git merge
+    - github 업로드
+        - git remote add origin https://github.com/First-woosun/github-practice2.git -> github 주소를 origin이라는 이름으로 저장
+        - git branch -M main -> 브랜치 이름 변경
+        - git push -u origin main -> 이 명령어를 입력해두면 git push만 입력해도 업로드 됨
+    - 협업 하는 법(branch)
+        - 브랜치 = 복사본
+        - git branch 브랜치 이름 -> 브랜치 생성
+        - git switch or git checkout -> 브랜치 이동 (switch를 권장)
+        - git switch -c or git checkout -b -> 브랜치 한번에 생성 및 이동
+    - 브랜치들 합치기
+        - main에 합치는 이유
+            - 메인 브랜치로 이동 후 메인에 작업한 브랜치 merge
+        - git switch main, git merge login
+    - pull request
+        - 혼자 개발할 때는 merge를 써도 되지만 협업에서는 pull request를 사용함
+        - github에서 코드의 변경사항을 적용하는 방법
+    - 변경된 코드를 내 컴퓨터에 반영
+        - git pull origin main
+    - 전체 흐름 
+        1. 브랜치 생성 및 이동 (git switch -c 브랜치 이름)
+        2. 기능 개발 및 코드 저장 (git add ., git commit -m "")
+        3. 코드 업로드 및 pull request 생성 (git push)
+        4. github에서 merge 
+        5. 내 로컬에도 반영 (git pull origin 브랜치 이름)
+    - 실전 가이드
+        - main 브랜치 -> 배포용 브랜치
+        - dev 브랜치 -> 테스트 용 브랜치
+        - 기능 브랜치 -> 기능 브랜치
+        - 기능 브랜치에서 개발 후 dev 브랜치에서 테스트하고 main 브랜치에 반영하여 배포
+    - 전체 순서
+        1. 초기 세팅
+            - 팀장 : 폴더를 생성하고 초기코드를 작성, git init add commit진행, github 레포지토리 생성, github 업로드
+            - 

@@ -162,4 +162,3 @@
     - 전체 순서
         1. 초기 세팅
             - 팀장 : 폴더를 생성하고 초기코드를 작성, git init add commit진행, github 레포지토리 생성, github 업로드
-            - 
